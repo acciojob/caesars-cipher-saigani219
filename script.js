@@ -32,14 +32,15 @@ const lookup = {
 };
 
 function rot13(encodedStr) {
-  let decodedArr = ""; // Your Result goes here
+  let decodedArr = []; // Your Result goes here
   // Only change code below this line
+	let ans = "";
   for(let i = 0; i < encodedStr.length; i++){
 	  let char = encodedStr.charAt(i);
 	  if(char >= 65 && char <= 90)
-		  decodedArr += lookup[char];
+		  ans += lookup[char];
 	  else
-		  decodedArr += char;
+		  ans += char;
   }
   return decodedArr; //return decodedArr
 }
