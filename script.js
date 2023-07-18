@@ -42,6 +42,7 @@ function rot13(encodedStr) {
 	  else
 		  ans += char;
   }
+	decodedArr[0] = ans;
   return decodedArr; //return decodedArr
 }
 
